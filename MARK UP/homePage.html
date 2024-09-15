@@ -3,10 +3,11 @@
     <head>
         <title>Amazon.com. SPEND LESS. SMILE MORE</title>
 
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <style>
         *{
@@ -89,7 +90,6 @@
             width: 60px;
         }
         .no_of_products_added_on_cart{
-            /* border: 2px solid red;  */
             display: inline-flex;
             background-color: black;
             width: 16px;
@@ -101,6 +101,29 @@
             right: 38px;
             bottom: 33px;
 
+        }
+        /* .PRODUCT_GRID{
+            display: grid;
+        } */
+
+        .box_formation{
+            display: flex;
+            flex-direction: column;
+            line-height: 2em;
+        }
+        .box_formation > img{
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+        }
+        .box_formation > div{
+            /* border: 2px solid red; */
+            margin-top: 5px;
+            height: 20px;
+        }
+        .ratings_design{
+            height: 24px;
+            width: 100px;
         }
     </style>
     <body>
@@ -136,6 +159,28 @@
                 <span class="no_of_products_added_on_cart">0</span>
             </div>
         </header>
+        <div class="PRODUCT_GRID">
+            <div class="box_formation">
+                <img src="../Image Bank/laptop.jfif" alt="" class="product_image_size">
+                <div class="product_description">HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)</div>
+                <div >
+                    <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
+                </div>
+                <div class="price_tag_design"> &#8377; 32,490</div>
+                <div class="option_tag">
+                    <select class="option_tag_styling" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    </select>
+                    <span> 
+                        <button class="fetching_Select_Option">sure</button>
+                    </span>
+                </div>
+                <div class="Add_to_Cart_button">Add to Cart</div>
+            </div>
+        </div>
     </body>
 </html>
 
