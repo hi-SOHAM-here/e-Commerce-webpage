@@ -102,28 +102,44 @@
             bottom: 33px;
 
         }
-        /* .PRODUCT_GRID{
+        .PRODUCT_GRID{
             display: grid;
-        } */
+            grid-template-columns: repeat(6, 1fr);
+        }
 
         .box_formation{
+            border-right: 1px solid rgb(158, 157, 157);
+            border-bottom: 1px solid rgb(158, 157, 157);
             display: flex;
             flex-direction: column;
             line-height: 2em;
+            padding-left: 0.5rem;
+            margin-top: 0.5rem;
         }
         .box_formation > img{
-            border: 2px solid red;
+            /* border: 2px solid red; */
             width: 200px;
             height: 200px;
         }
         .box_formation > div{
             /* border: 2px solid red; */
-            margin-top: 5px;
-            height: 20px;
+            margin-top: 1rem;
         }
         .ratings_design{
-            height: 24px;
-            width: 100px;
+            height: 16px;
+            width: 104px;
+        }
+        .Add_to_Cart_button{
+            border: 2px solid;
+            display: flex;
+            height: 3rem;
+            width: 8.5rem;
+            border-radius: 48px;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f136;
+            margin: auto;
+            margin-bottom: 0.5rem;
         }
     </style>
     <body>
@@ -166,7 +182,47 @@
                 <div >
                     <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
                 </div>
-                <div class="price_tag_design"> &#8377; 32,490</div>
+                <div class="price_tag_design"> &#8377; 32490</div>
+                <div class="option_tag">
+                    <select class="option_tag_styling" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    </select>
+                    <span> 
+                        <button class="fetching_Select_Option">sure</button>
+                    </span>
+                </div>
+                <div class="Add_to_Cart_button">Add to Cart</div>
+            </div>
+            <div class="box_formation">
+                <img src="../Image Bank/Harry Potter Book collection.jpg" alt="" class="product_image_size">
+                <div class="product_description">Harry Potter Boxed Set: The Complete Collection Adult</div>
+                <div >
+                    <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
+                </div>
+                <div class="price_tag_design"> &#8377; 3198</div>
+                <div class="option_tag">
+                    <select class="option_tag_styling" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    </select>
+                    <span> 
+                        <button class="fetching_Select_Option">sure</button>
+                    </span>
+                </div>
+                <div class="Add_to_Cart_button">Add to Cart</div>
+            </div>
+            <div class="box_formation">
+                <img src="../Image Bank/men's cargo khaki.jpg" alt="" class="product_image_size">
+                <div class="product_description">Lymio brand new cargos for Men</div>
+                <div >
+                    <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
+                </div>
+                <div class="price_tag_design"> &#8377; 699</div>
                 <div class="option_tag">
                     <select class="option_tag_styling" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
                     <option value="1">1</option>
