@@ -52,3 +52,15 @@ product_object_builder(
     `4`,
     `30000`
 );
+product_object_builder(
+    `../Image Bank/laptop.jfif`,
+    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `4`,
+    `30000`
+);
+product_object_builder(
+    `../Image Bank/laptop.jfif`,
+    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `4`,
+    `30000`
+);
