@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com Shopping Cart</title>
+</head>
+<link rel="stylesheet" href="./homePageStyle.css">
+<body>
+    <header class="navbar">
+        <div>
+            <img src="../Image Bank/Screenshot (148).png" alt="Amazon.com" class="brand-logo">
+        </div>
+        <div class="total_Search_Bar_adjustment">
+            <div class="dropdown_btn_for_prdct_vrity">
+                All
+                <img src="../Image Bank/arrow-point-to-down_2.png" alt="" class="down-arrow_for_prdct_vrity">
+            </div>
+            <div class="search-box_size">
+                <input type="text" placeholder="Search Amazon" > 
+            </div>
+            <div class="search-button">
+                <img src="../Image Bank/loupe.png" alt="" class="search-icon">
+            </div>
+        </div>
+        <div>
+            <div style="font-size: small;">Hello, sign in</div>
+            <div style="font-weight: bold;">
+                Account & Lists
+                <img src="../Image Bank/arrow-point-to-down_3.png" alt="" class="down-arrow_for_accounts_log-in">
+            </div>
+        </div>
+        <div>
+            <div style="font-size: small;">Returns</div>
+            <div style="font-weight: bold;">& Orders</div>
+        </div>
+        <div>
+            <img src="../Image Bank/cart.png" alt="" class="cart_size">
+            <span class="no_of_products_added_on_cart">0</span>
+        </div>
+    </header>
+    <div id="cartlist">
+
+    </div>
+    <script src="./homePageScript.js"></script>
+    <script>
+        let fetching_the_cart = document.getElementById("cartlist");
+        
+        for (let index = 0; index < productIdList.length; index++) {
+            consol.log(productIdList[index]);
+            
+        }
+
+        
+    </script>
+</body>
+</html>

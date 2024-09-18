@@ -79,14 +79,15 @@ input[type="text"] {
 }
 .no_of_products_added_on_cart{
     display: inline-flex;
-    background-color: black;
-    width: 16px;
+    background-color: #0f1111;
+    /* background-color: black; */
+    width: 18px;
     height: 18px;
     justify-content: center;
     align-items: center;
     position: relative;
     font-weight: bolder;
-    right: 38px;
+    right: 39px;
     bottom: 33px;
 
 }

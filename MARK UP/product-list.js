@@ -1,6 +1,7 @@
 let product_array = [];
 function product_object_builder(image, description, rating, price){
    let  product_objcet = {
+    prdct_id: description,
     prdct_image: image,
     prdct_description: description,
     prdct_rating: rating,
