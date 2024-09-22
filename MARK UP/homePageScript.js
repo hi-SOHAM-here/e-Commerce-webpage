@@ -16,8 +16,6 @@ for (let i = 0; i < product_array.length; i++) {
         <div class="Add_to_Cart_button" data-product-id="${product_array[i].prdct_description}">Add to Cart</div>
     </div>`             
 }
-
-console.log(html_String);
 fetching_Product_Grid[0].innerHTML = html_String;
 
 
