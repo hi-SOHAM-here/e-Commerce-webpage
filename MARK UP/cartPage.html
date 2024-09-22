@@ -60,6 +60,10 @@
     .product-img{
         margin: auto;
     }
+    .product-img_child{       
+        width: 225px;
+        height: 225px;
+    }
     .product-info{
         display: flex;
         flex-direction: column;
@@ -127,42 +131,6 @@
     </header>
     <div class="cart-body">
         <div class="product-list">
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="../Image Bank/laptop.jfif" alt="">
-                </div>
-                <div class="product-info">
-                    <div>HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)</div>
-                <div>
-                    <label for="quantity">Quantity: </label>
-                    <input type="number" id="quantity" name="quantity" min="1">
-                    <input type="submit" value="ok">
-                </div>
-                <div>
-                    <span>Price: </span>
-                    <span>30000</span>
-                </div>
-                <Button class="Delete-btn">delete product</Button>
-                </div>          
-            </div>
-            <div class="product-box">
-                <div class="product-img">
-                    <img src="../Image Bank/laptop.jfif" alt="">
-                </div>
-                <div class="product-info">
-                    <div>HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)</div>
-                <div>
-                    <label for="quantity">Quantity: </label>
-                    <input type="number" id="quantity" name="quantity" min="1">
-                    <input type="submit" value="ok">
-                </div>
-                <div>
-                    <span>Price: </span>
-                    <span>30000</span>
-                </div>
-                <Button class="Delete-btn">delete product</Button>
-                </div>         
-            </div>
         </div>
         <div class="billdesk">
             <div class="parent_for_bills">
@@ -188,5 +156,35 @@
             </div>     
         </div>
     </div>
+    <script src="../MARK UP/product-list.js"></script>
+    <script>
+        let fetching_product_list = document.getElementsByClassName("product-list");
+        let cart_html_string = fetching_product_list[0].innerHTML;
+        console.log(cart_html_string);
+
+        for(let i=0; i<2; i++){
+            cart_html_string = cart_html_string + 
+            `<div class="product-box">
+                <div class="product-img">
+                    <img src="${product_array[i].prdct_image}" alt="" class="product-img_child">
+                </div>
+                <div class="product-info">
+                    <div>${product_array[i].prdct_description}</div>
+                <div>
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" id="quantity" name="quantity" min="1">
+                    <input type="submit" value="ok">
+                </div>
+                <div>
+                    <span>Price: </span>
+                    <span>${product_array[i].prdct_price}</span>
+                </div>
+                <Button class="Delete-btn">delete product</Button>
+                </div>          
+            </div>`
+        }
+
+        fetching_product_list[0].innerHTML = cart_html_string;
+    </script>
 </body>
 </html>

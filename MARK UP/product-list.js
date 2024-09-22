@@ -18,50 +18,38 @@ product_object_builder(
     `30000`
 );
 product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `../Image Bank/Harry Potter Book collection.jpg`,
+    `Harry Potter Boxed Set: The Complete Collection Adult`,
     `4`,
-    `30000`
+    `3198`
 );
 product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `../Image Bank/men's cargo khaki.jpg`,
+    `Lymio brand new cargos for Men`,
     `4`,
-    `30000`
+    `699`
 );
 product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `../Image Bank/61w7-xdaPjL._SY575_.jpg`,
+    `Puma Unisex-Adult Nrgy Comet Running Shoe`,
     `4`,
-    `30000`
+    `1799`
 );
 product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `../Image Bank/dinnerset.jpg`,
+    `THEARTISANEMPORIUM Hand-Painted Ceramic Dinner Set`,
     `4`,
-    `30000`
+    `5410`
 );
 product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `../Image Bank/womenkurty.jpg`,
+    `GoSriKi Women's Chikankari Embroidered Straight Kurta`,
     `4`,
-    `30000`
+    `489`
 );
 product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
+    `../Image Bank/men's tshirt.jpg`,
+    `Lymio plain T-Shirt for Men`,
     `4`,
-    `30000`
-);
-product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
-    `4`,
-    `30000`
-);
-product_object_builder(
-    `../Image Bank/laptop.jfif`,
-    `HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)`,
-    `4`,
-    `30000`
+    `379`
 );

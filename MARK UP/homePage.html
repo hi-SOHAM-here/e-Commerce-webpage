@@ -46,98 +46,10 @@
             </div>
         </header>
         <div class="PRODUCT_GRID">
-            <div class="box_formation">
-                <img src="../Image Bank/laptop.jfif" alt="" class="product_image_size">
-                <div class="product_description">HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)</div>
-                <div>
-                    <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
-                </div>
-                <div class="price_tag_design"> &#8377; 32490</div>
-                <!-- <div class="option_tag">
-                    <select class="option_tag_styling select_value_fetching" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    </select>
-                </div> -->
-                <div class="Add_to_Cart_button" data-product-id="HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">Add to Cart</div>
-            </div>
-            <div class="box_formation">
-                <img src="../Image Bank/Harry Potter Book collection.jpg" alt="" class="product_image_size">
-                <div class="product_description">Harry Potter Boxed Set: The Complete Collection Adult</div>
-                <div >
-                    <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
-                </div>
-                <div class="price_tag_design"> &#8377; 3198</div>
-                <!-- <div class="option_tag">
-                    <select class="option_tag_styling select_value_fetching" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    </select>
-                </div> -->
-                <div class="Add_to_Cart_button" data-product-id="Harry Potter Boxed Set: The Complete Collection Adult">Add to Cart</div>
-            </div>
-            <div class="box_formation">
-                <img src="../Image Bank/men's cargo khaki.jpg" alt="" class="product_image_size" style="margin-top: 0%; margin-bottom: 0%;">
-                <div class="product_description">Lymio brand new cargos for Men</div>
-                <div >
-                    <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
-                </div>
-                <div class="price_tag_design"> &#8377; 699</div>
-                <!-- <div class="option_tag">
-                    <select class="option_tag_styling select_value_fetching" id="quantity_of_HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    </select>
-                </div> -->
-                <div class="Add_to_Cart_button" data-product-id="Lymio brand new cargos for Men">Add to Cart</div>
-            </div>
         </div>
 
         <script src="./product-list.js"></script>
         <script src="./homePageScript.js"></script>
-        <!-- <script>
-            console.log(product_array);
-            let fetching_Product_Grid = document.getElementsByClassName("PRODUCT_GRID");
-
-            html_String = fetching_Product_Grid[0].innerHTML;
-
-            for (let i = 0; i < product_array.length; i++) {
-                html_String = html_String +
-                `<div class="box_formation">
-                    <img src="${product_array[i].prdct_image}" alt="" class="product_image_size">
-                    <div class="product_description">${product_array[i].prdct_description}</div>
-                    <div>
-                        <img src="../Image Bank/1_star.png" alt="" class="ratings_design">
-                    </div>
-                    <div class="price_tag_design"> ₹ ${product_array[i].prdct_price}</div>
-                    <div class="Add_to_Cart_button" data-product-id="${product_array[i].prdct_description}">Add to Cart</div>
-                </div>`             
-            }
-
-            console.log(html_String);
-            fetching_Product_Grid[0].innerHTML = html_String;
-
-
-            const productIdList = [];
-            let fetching_Add_to_cart_Btn = document.querySelectorAll(`.Add_to_Cart_button`);
-            fetching_Add_to_cart_Btn.forEach(add_to_cart => {
-                    add_to_cart.addEventListener('click', ()=>{
-                    let targetting_cart = document.querySelector(`.no_of_products_added_on_cart`);
-                    let currentCartValue = parseInt(targetting_cart.innerHTML); 
-                    currentCartValue++;
-                    targetting_cart.innerHTML = currentCartValue;
-                    let productId = add_to_cart.getAttribute(`data-product-id`);                
-                    productIdList.push(productId);
-                    console.log(productIdList);
-                })
-            });
-        </script> -->
     </body>
 </html>
 
