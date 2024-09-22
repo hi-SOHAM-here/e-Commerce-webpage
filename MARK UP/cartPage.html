@@ -4,54 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon.com Shopping Cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="./homePageStyle.css">
+<style>
+    *{
+        font-family: "Roboto", sans-serif;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    header{
+        margin-left: 2rem;
+        /* margin-right: 2rem; */
+        width: 95vw;
+        border-bottom: 1px solid;
+        color: #0f1111;
+        font-size: large;
+
+    }
+    header > p{
+        font-size: 2.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .cart-body{
+        /* border: 2px solid red; */
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-right: 2rem;
+        display: flex;
+        column-gap: 1rem;
+    }
+    .cart-body > div{
+        /* border: 1px solid rgb(11, 11, 11); */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .product-list{
+        width: 70vw;
+        border: 1px solid rgb(11, 11, 11);
+        border-radius: 0.5rem;
+    }
+    .product-box{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        border-bottom: 1px solid;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .product-img{
+        margin: auto;
+    }
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    } 
+    .Delete-btn{
+        width: 10rem;
+        height: 2rem;
+        font-size: 1rem;
+        border-radius: 10px;
+        border: 1px solid;
+    }
+    .Delete-btn:hover{
+        cursor: pointer;
+        background-color: #0f1111;
+        color: aliceblue;
+    }
+    .billdesk{
+        width: 30vw;  
+    }
+    .parent_for_bills{
+        border: 1px solid black;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 0.5rem;
+    }
+    .bill-heading{
+        font-size: x-large;
+        font-weight: 700;
+    }
+    .sub-div{
+        /* border: 1px solid; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: 0.75rem;
+        font-size: large;
+    }
+    .pay-btn{
+        /* border: 2px solid brown; */
+        background-color: rgb(174, 81, 81);
+        color: rgb(251, 243, 232);
+        width: 90%;
+        height: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        font-size: larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pay-btn:hover{
+        border: 2px solid brown;
+        cursor: pointer;
+        color: brown;
+        background-color: rgb(222, 220, 220);
+    }
+</style>
 <body>
-    <header class="navbar">
-        <div>
-            <img src="../Image Bank/Screenshot (148).png" alt="Amazon.com" class="brand-logo">
-        </div>
-        <div class="total_Search_Bar_adjustment">
-            <div class="dropdown_btn_for_prdct_vrity">
-                All
-                <img src="../Image Bank/arrow-point-to-down_2.png" alt="" class="down-arrow_for_prdct_vrity">
-            </div>
-            <div class="search-box_size">
-                <input type="text" placeholder="Search Amazon" > 
-            </div>
-            <div class="search-button">
-                <img src="../Image Bank/loupe.png" alt="" class="search-icon">
-            </div>
-        </div>
-        <div>
-            <div style="font-size: small;">Hello, sign in</div>
-            <div style="font-weight: bold;">
-                Account & Lists
-                <img src="../Image Bank/arrow-point-to-down_3.png" alt="" class="down-arrow_for_accounts_log-in">
-            </div>
-        </div>
-        <div>
-            <div style="font-size: small;">Returns</div>
-            <div style="font-weight: bold;">& Orders</div>
-        </div>
-        <div>
-            <img src="../Image Bank/cart.png" alt="" class="cart_size">
-            <span class="no_of_products_added_on_cart">0</span>
-        </div>
+    <header>
+        <p>Shopping Cart</p>
     </header>
-    <div id="cartlist">
-
+    <div class="cart-body">
+        <div class="product-list">
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="../Image Bank/laptop.jfif" alt="">
+                </div>
+                <div class="product-info">
+                    <div>HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)</div>
+                <div>
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" id="quantity" name="quantity" min="1">
+                    <input type="submit" value="ok">
+                </div>
+                <div>
+                    <span>Price: </span>
+                    <span>30000</span>
+                </div>
+                <Button class="Delete-btn">delete product</Button>
+                </div>          
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <img src="../Image Bank/laptop.jfif" alt="">
+                </div>
+                <div class="product-info">
+                    <div>HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm)</div>
+                <div>
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" id="quantity" name="quantity" min="1">
+                    <input type="submit" value="ok">
+                </div>
+                <div>
+                    <span>Price: </span>
+                    <span>30000</span>
+                </div>
+                <Button class="Delete-btn">delete product</Button>
+                </div>         
+            </div>
+        </div>
+        <div class="billdesk">
+            <div class="parent_for_bills">
+                <div class="bill-heading">Order summary</div>
+                <div class="sub-div" style="margin-top: 2rem;">
+                    <div>No. of items</div>
+                    <div>2</div>
+                </div>
+                <div class="sub-div">
+                    <div>Subtotal: </div>
+                    <div>60000</div>
+                </div>
+                <div class="sub-div" style="padding-bottom: 0.5rem; border-bottom: 1px solid;">
+                    <div>Shipping & Handling: </div>
+                    <div>00.00</div>
+                </div>
+                <div class="sub-div">
+                    <div>Total order value</div>
+                    <div>00.00</div>
+                </div>
+    
+                <div class="pay-btn">Proceed to pay</div>
+            </div>     
+        </div>
     </div>
-    <script src="./homePageScript.js"></script>
-    <script>
-        let fetching_the_cart = document.getElementById("cartlist");
-        
-        for (let index = 0; index < productIdList.length; index++) {
-            consol.log(productIdList[index]);
-            
-        }
-
-        
-    </script>
 </body>
 </html>
